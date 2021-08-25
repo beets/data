@@ -104,13 +104,12 @@ Ensure prerequisites are installed
 * [Python3](https://www.python.org/downloads/)
 * [Pip](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
-Install requirements and setup a virtual environment to isolate python development in this repo.
+Install requirements and setup a virtual environment to isolate python
+development in this repo. We recommend doing this at the start of all Python
+sessions.
 
 ```shell
-python3 -m venv .env
-source .env/bin/activate
-
-pip3 install -r requirements.txt
+. setup_python.sh
 ```
 
 ##### Guidelines

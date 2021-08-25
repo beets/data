@@ -23,14 +23,7 @@ PYTHON_FOLDERS="util/ scripts/ import-automation/"
 PYTHON_REQUIREMENTS_INSTALLED=false
 
 function setup_python {
-  python3 -m venv .env
-  source .env/bin/activate
-  if [[ "$PYTHON_REQUIREMENTS_INSTALLED" = false ]]
-  then
-    echo "Installing Python requirements"
-    pip3 install -r requirements.txt -q
-    PYTHON_REQUIREMENTS_INSTALLED=true
-  fi
+  . "setup_python.sh"
 }
 
 # Fixes lint
